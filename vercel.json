@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "br-reference-server",
+  "builds": [
+    { "src": "test.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/test.js" }
+  ]
+}
